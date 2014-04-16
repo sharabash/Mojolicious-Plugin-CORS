@@ -4,7 +4,7 @@
 
 =head1 NAME
 
-Mojolicious::Plugin::UTF8
+Mojolicious::Plugin::CORS
 
 =head1 VERSION
 
@@ -18,7 +18,7 @@ version 0.01
     sub startup {
         my $self = shift;
 
-        $self->plugin( 'Mojolicious::Plugin::UTF8' );
+        $self->plugin( 'Mojolicious::Plugin::CORS' );
     }
 
 =for :stopwords cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee diff irc mailto metadata placeholders metacpan
@@ -28,7 +28,7 @@ version 0.01
 =head2 Bugs / Feature Requests
 
 Please report any bugs or feature requests through the issue tracker
-at L<https://github.com/sharabash/mojolicious-plugin-utf8/issues>.
+at L<https://github.com/sharabash/mojolicious-plugin-cors/issues>.
 You will be notified automatically of any progress on your issue.
 
 =head2 Source Code
@@ -36,9 +36,9 @@ You will be notified automatically of any progress on your issue.
 This is open source software.  The code repository is available for
 public review and contribution under the terms of the license.
 
-L<https://github.com/sharabash/mojolicious-plugin-utf8>
+L<https://github.com/sharabash/mojolicious-plugin-cors>
 
-  git clone git://github.com/sharabash/mojolicious-plugin-utf8.git
+  git clone git://github.com/sharabash/mojolicious-plugin-cors.git
 
 =head1 AUTHOR
 
