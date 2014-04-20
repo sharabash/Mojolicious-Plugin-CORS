@@ -7,9 +7,9 @@ sub register {
         $app->hook( before_dispatch => sub {
             my $c = shift;
             $c->res->headers->header( 'Access-Control-Allow-Origin' => '*' );
-            $c->res->headers->header( 'Access-Control-Allow-Methods' => 'POST, GET, PUT, DELETE, OPTIONS' );
+            $c->res->headers->header( 'Access-Control-Allow-Methods' => 'GET, PUT, POST, DELETE, OPTIONS' );
             $c->res->headers->header( 'Access-Control-Max-Age' => 3600 );
-            $c->res->headers->header( 'Access-Control-Allow-Headers' => 'X-Requested-With' );
+            $c->res->headers->header( 'Access-Control-Allow-Headers' => 'Content-Type, Authorization, X-Requested-With' );
         } );
     };
 }
